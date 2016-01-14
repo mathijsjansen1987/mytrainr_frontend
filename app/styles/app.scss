@@ -1,0 +1,19 @@
+body,html{
+	padding:0;
+	margin:0;
+	font-family:Arial;
+}
+
+header#main{
+	box-sizing: border-box;
+	width:100%;
+	background-color:#eb1c23;
+	padding:10px 20px;
+
+	a{
+		color:#fff;
+		text-decoration: none;
+		padding:10px;
+		&.active{ font-weight:bold;}
+	}
+}

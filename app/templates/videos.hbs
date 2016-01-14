@@ -6,8 +6,10 @@
 <ul>
   {{#each model as |video|}}
     <li>
+		{{#link-to 'video' video}}
 		<h3>{{video.title}}</h3>
 		<img src="{{video.url}}"/>
+		{{/link-to}}
 	</li>
   {{/each}}
 </ul>

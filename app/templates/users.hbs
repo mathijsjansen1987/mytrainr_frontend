@@ -1,0 +1,12 @@
+<h1>Gebruikers</h1>
+
+{{#link-to 'users.new'}}>Maak nieuwe gebruiker aan{{/link-to}}
+
+<ul>
+  {{#each model as |user|}}
+    <li>
+		<h3>{{user.name}}</h3>
+		<h5>{{user.emailaddress}}</h5>
+	</li>
+  {{/each}}
+</ul>
