@@ -1,0 +1,13 @@
+<h1>Videos</h1>
+
+{{log model}}
+
+
+<ul>
+  {{#each model as |video|}}
+    <li>
+		<h3>{{video.title}}</h3>
+		<img src="{{video.url}}"/>
+	</li>
+  {{/each}}
+</ul>
