@@ -52,7 +52,7 @@ module.exports = function(environment) {
 	ENV.contentSecurityPolicy = {
 		// Deny everything by default
 		'connect-src': "*",
-		'img-src': "http://lorempixel.com",
+		'img-src': "'self' http://lorempixel.com",
 	}
 
 	return ENV;

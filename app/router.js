@@ -12,7 +12,7 @@ Router.map(function() {
 		this.route('show', { path: '/:video_id' });
 	});
 
-	this.resource('analysis');
+	this.resource('analyses');
 	this.resource('groups');
 
 	this.resource('profile',function(){
