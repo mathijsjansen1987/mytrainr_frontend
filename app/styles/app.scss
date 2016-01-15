@@ -7,13 +7,76 @@ body,html{
 header#main{
 	box-sizing: border-box;
 	width:100%;
-	background-color:#eb1c23;
+	background-color:#eee;
 	padding:10px 20px;
 
-	a{
-		color:#fff;
-		text-decoration: none;
-		padding:10px;
-		&.active{ font-weight:bold;}
+	a#logo{
+		display: inline-block;
+		img{
+			width:240px;
+			height:auto;
+		}
+	}
+
+	nav{
+		margin: 24px 0 0 24px;
+		vertical-align: top;
+		display: inline-block;
+		a{
+			color:#000;
+			text-decoration: none;
+			padding:10px;
+			&.active{ text-decoration:underline;}
+		}
+	}
+
+	span#profileInfo{
+		margin-top: 24px;
+		vertical-align: top;
+		display: inline-block;
+		float:right;
+	}
+
+}
+
+
+section#content{
+	padding:30px 20px;
+}
+
+
+//// VIDEO OVERVIEW
+body.videos{
+	ul{
+		margin:0;
+		padding:0;
+		li.video-item{
+			list-style: none;
+			float:left;
+			margin:10px;
+			position:relative;
+
+			a{
+				color:#000;
+				font-size:14px;
+			}
+
+			&:hover .info{ display: block; }
+
+			.info{
+				padding:10px;
+				position:absolute;
+				left:0;
+				top:0;
+				right:0;
+				bottom:0;
+				background-color:#ccc;
+				display: none;
+
+				h3{ font-size:14px;}
+
+			}
+		}
 	}
 }
+

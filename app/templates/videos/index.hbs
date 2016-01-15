@@ -1,0 +1,21 @@
+<h1>Videos</h1>
+
+{{log model}}
+
+<ul>
+  {{#each model as |video|}}
+    <li class="video-item">
+		{{#link-to 'videos.show' video}}
+		<img src="{{video.imageUrl}}" width="285" height="175"/>
+		<section class="info">
+			<h3>{{video.title}}</h3>
+			<hr>
+			<p>{{video.description}}</p>
+			<hr>
+			<button>Bekijk</button>
+			<button {{action 'removeVideo' video}}>x</button>
+		</section>
+		{{/link-to}}
+	</li>
+  {{/each}}
+</ul>

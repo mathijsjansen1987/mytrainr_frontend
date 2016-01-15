@@ -1,12 +1,17 @@
 <header id="main">
+	{{#link-to 'dashboard' id="logo"}}<img src="assets/images/logo.png"/>{{/link-to}}
 	<nav>
 		{{#link-to 'dashboard'}}Dashboard{{/link-to}}
-		{{#link-to 'users'}}Gebruikers{{/link-to}}
 		{{#link-to 'videos'}}Videos{{/link-to}}
+		{{#link-to 'analysis'}}Analyses{{/link-to}}
+		{{#link-to 'groups'}}Groepen{{/link-to}}
 	</nav>
-	<span id="profileImage">
-
+	<span id="profileInfo">
+		{{#link-to 'profile.edit'}}Mathijs Jansen{{/link-to}}
+		<img id="profileImg" src=""/>
 	</span>
 </header>
 
-{{outlet}}
+<section id="content">
+	{{outlet}}
+</section>
