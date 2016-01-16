@@ -1,0 +1,10 @@
+<h1>Groepen</h1>
+<ul>
+  {{#each model as |group|}}
+    <li class="group-item">
+		{{group.name}}
+		<button {{action 'removeGroup' group}}>x</button>
+	</li>
+  {{/each}}
+</ul>
+

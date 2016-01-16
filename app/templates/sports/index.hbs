@@ -1,0 +1,10 @@
+<h1>Sporten</h1>
+
+<ul>
+  {{#each model as |sport|}}
+    <li class="sport-item">
+		{{sport.name}}
+		<button {{action 'removeSport' sport}}>x</button>
+	</li>
+  {{/each}}
+</ul>
