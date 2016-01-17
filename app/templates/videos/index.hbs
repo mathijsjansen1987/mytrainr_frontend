@@ -1,7 +1,6 @@
 <h1>Videos</h1>
 
-{{log model}}
-
+{{#link-to 'videos.add'}}{{fa-icon 'upload'}}Video toevoegen{{/link-to}}
 <ul>
   {{#each model as |video|}}
     <li class="video-item">

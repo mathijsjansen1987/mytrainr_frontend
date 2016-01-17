@@ -11,6 +11,7 @@ Router.map(function() {
 	this.resource('videos',function(){
 		this.route('index', { path: '/' });
 		this.route('show', { path: '/:video_id' });
+		this.route('add', { path: '/add' });
 	});
 	this.resource('analyses',function(){
 		this.route('index', { path: '/'});
