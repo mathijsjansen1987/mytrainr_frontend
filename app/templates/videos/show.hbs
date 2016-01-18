@@ -1,10 +1,10 @@
 <h1>Video bekijken</h1>
-
 <p>{{model.title}}</p>
 
-
+{{#link-to 'videos'}}{{fa-icon "arrow-left"}} Terug naar overzicht{{/link-to}}
+<br>
 <video controls>
 	<source src="{{model.url}}" type="video/mp4">
 </video>
-
+<br>
 <a href="{{model.url}}" download>{{fa-icon "download"}} Download de video</a>
