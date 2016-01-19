@@ -12,6 +12,9 @@
         },
         "cordova-plugin-media-capture": {
             "PACKAGE_NAME": "com.mytrainr.app"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.mytrainr.app"
         }
     },
     "dependent_plugins": {
