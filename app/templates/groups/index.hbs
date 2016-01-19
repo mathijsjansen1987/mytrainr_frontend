@@ -5,6 +5,7 @@
     <li class="group-item">
 		{{group.name}}
 		<button {{action 'removeGroup' group}}>x</button>
+		{{#link-to 'groups.edit' group}}wijzig{{/link-to}}
 	</li>
   {{/each}}
 </ul>

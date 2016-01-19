@@ -1,7 +1,8 @@
 <h1>Sport toevoegen</h1>
 
 <p>
-	{{input type="text" value=title placeholder="titel" size="50"}}
+	{{input type="text" value=name placeholder="titel" size="50"}}
 </p>
 
+{{#link-to 'sports'}}Annuleren{{/link-to}}
 <button {{action 'addSport'}}>Toevoegen</button>

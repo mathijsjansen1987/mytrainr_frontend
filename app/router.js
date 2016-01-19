@@ -19,6 +19,7 @@ Router.map(function() {
 	this.resource('groups',function(){
 		this.route('index', { path: '/'});
 		this.route('add', { path: '/add' });
+		this.route('edit', { path: '/edit/:group_id' });
 	});
 	this.resource('sports',function(){
 		this.route('index', { path: '/'});

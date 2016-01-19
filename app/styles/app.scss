@@ -1,5 +1,36 @@
 @import "bower_components/font-awesome/scss/font-awesome";
 
+// Objects
+
+.btn{
+	padding:10px 20px;
+	border:0;
+	background-color:red;
+	color:#fff;
+	font-size:13px;
+	text-align: center;
+	text-decoration: none;
+	cursor:pointer;
+
+	i{
+		margin-right:10px;
+		color:#fff;
+	}
+
+
+	&.captureVideo{
+		padding:0;
+		border-radius: 100%;
+		width: 50px;
+		height: 50px;
+		background-color: red;
+		color: #fff;
+		border: 0;
+		font-size: 20px;
+		i{margin:0;}
+	}
+}
+
 body,html{
 	padding:0;
 	margin:0;
@@ -55,7 +86,7 @@ body.videos{
 		li.video-item{
 			list-style: none;
 			float:left;
-			margin:10px;
+			margin:10px 10px 0 0;
 			position:relative;
 
 			a{
@@ -72,7 +103,7 @@ body.videos{
 				top:0;
 				right:0;
 				bottom:0;
-				background-color:#ccc;
+				background-color:rgba(255,255,255,0.5);
 				display: none;
 
 				h3{ font-size:14px;}

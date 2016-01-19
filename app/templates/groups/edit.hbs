@@ -1,0 +1,18 @@
+<h1>Groep wijzigen</h1>
+
+<p>
+	{{input type="text" value=title placeholder="titel" size="50"}}
+</p>
+
+<p>
+	{{textarea value=description placeholder="beschrijving" cols="80" rows="6" }}
+</p>
+
+<p>
+	{{input type="text" value=sport placeholder="sport" size="50" }}
+</p>
+
+{{#link-to 'groups'}}Annuleren{{/link-to}}
+<button {{action 'addGroup'}}>Toevoegen</button>
+
+{{log model}}

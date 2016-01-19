@@ -8,4 +8,5 @@
 	{{textarea value=description placeholder="beschrijving" cols="80" rows="6" }}
 </p>
 
-<button {{action 'addVideo'}}>Toevoegen</button>
+{{#link-to 'videos' class="btn"}}Annuleren{{/link-to}}
+<button class="btn" {{action 'addVideo' }}>Toevoegen</button>

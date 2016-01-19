@@ -1,6 +1,11 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
+	
+	name: null,
+	beforeModel: function(){
+		this.set('name','');
+	},
 
 	actions: {
 
