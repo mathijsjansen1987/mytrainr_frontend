@@ -21,6 +21,10 @@ You will need the following things properly installed on your computer.
 * `npm install`
 * `bower install`
 
+## Used plugins
+* https://github.com/apache/cordova-plugin-media-capture 
+* https://github.com/apache/cordova-plugin-network-information 
+
 ## Running / Development
 
 * `ember server`
