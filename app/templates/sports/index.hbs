@@ -1,10 +1,10 @@
 <h1>Sporten</h1>
-{{#link-to 'sports.add'}}{{fa-icon 'plus'}}Sport toevoegen{{/link-to}}
+{{#link-to 'sports.add' class="btn"}}{{fa-icon 'plus'}}Sport toevoegen{{/link-to}}
 <ul>
   {{#each model as |sport|}}
     <li class="sport-item">
 		{{sport.name}}
-		<button {{action 'removeSport' sport}}>x</button>
+		<button class="btn" {{action 'removeSport' sport}}>x</button>
 	</li>
   {{/each}}
 </ul>

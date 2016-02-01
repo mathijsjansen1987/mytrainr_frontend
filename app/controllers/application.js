@@ -3,6 +3,9 @@ import Ember from 'ember';
 export default Ember.Controller.extend({
 
 	actions: {
+		toggleNav: function(){
+			Ember.$('#mobileNav').toggleClass('show');
+		},
 
 		checkConnection: function() {
 			var networkState = navigator.network.connection.type;
@@ -27,30 +30,7 @@ export default Ember.Controller.extend({
 				var i, path, len;
 				for (i = 0, len = mediaFiles.length; i < len; i += 1) {
 					path = mediaFiles[i].fullPath;
-					// do something interesting with the file
-
-					var title = 'from mobile'
-					var description = 'this is recorder by mobile';
-					var url = path;
-
-					var video = this.store.createRecord('video', {
-						title: title,
-						description: description,
-						url: url,
-					});					
-
-					function transitionToPost(video) {
-						self.transitionToRoute('videos');
-					}
-
-					function failure(reason) {
-						// handle the error
-						console.log(reason);
-					}
-
-					video.save().then(transitionToPost).catch(failure);
-
-
+					self.send('createVideo',path);
 				}
 			};
 
@@ -62,6 +42,31 @@ export default Ember.Controller.extend({
 			// start video capture
 			navigator.device.capture.captureVideo(captureSuccess, captureError, {limit:1}); 
 
+		},
+
+		createVideo: function(path){
+			self = this;
+			var title = 'from'
+			var description = 'mobile';
+			var url = path;
+
+			var video = this.store.createRecord('video', {
+				title: title,
+				description: description,
+				url: url,
+			});					
+
+			function transitionToPost(video) {
+				self.transitionToRoute('videos');
+			}
+
+			function failure(reason) {
+				// handle the error
+				console.log(reason);
+				alert('failure:'+reason + ":" + reason.message);
+			}
+
+			video.save().then(transitionToPost).catch(failure);
 		}
 
 	}

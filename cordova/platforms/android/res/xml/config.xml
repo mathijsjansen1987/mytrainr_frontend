@@ -16,14 +16,16 @@
         <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
     </feature>
     <preference name="AndroidPersistentFileLocation" value="Internal" />
+    <preference name="CodePushDeploymentKey" value="2viOWaGK5GF-iQjeG0StKgl45FgeVkadlJ-Ul" />
     <allow-intent href="market:*" />
     <name>Mytrainr</name>
+    <access origin="https://codepush.azurewebsites.net/" />
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
-    </description>
+		A sample Apache Cordova application that responds to the deviceready event.
+	</description>
     <author email="mathijs@code.rehab" href="http://code.rehab">
-        Code rehab Team
-    </author>
+		Code rehab Team
+	</author>
     <content src="index.html" />
     <access origin="*" />
     <preference name="AndroidPersistentFileLocation" value="Compatibility" />

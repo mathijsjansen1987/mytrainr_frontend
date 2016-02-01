@@ -11,8 +11,8 @@
 			<hr>
 			<p>{{video.description}}</p>
 			<hr>
-			<button>Bekijk</button>
-			<button {{action 'removeVideo' video}}>x</button>
+			<button class="btn">Bekijk</button>
+			<button class="btn" {{action 'removeVideo' video}}>{{fa-icon 'trash'}}</button>
 		</section>
 		{{/link-to}}
 	</li>

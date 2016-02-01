@@ -11,9 +11,22 @@
 		{{#link-to 'profile.edit'}}Mathijs Jansen{{/link-to}}
 		<img id="profileImg" src=""/>
 	</span>
-	<button{{ation 'checkConnection'}}>check connection</button>
-	<button class="btn captureVideo" {{action 'captureVideo'}}>{{fa-icon 'video-camera'}} </button>
+	<button {{action 'toggleNav'}} class="toggleNaV"></button>
 </header>
+
+<nav id="mobileNav">
+	
+	<span id="profileInfo">
+		{{#link-to 'profile.edit'}}Mathijs Jansen{{/link-to}}
+		<img id="profileImg" src=""/>
+	</span>
+	{{#link-to 'dashboard'}}{{fa-icon "home"}} Dashboard{{/link-to}}
+	{{#link-to 'videos'}}{{fa-icon "video-camera"}} Videos{{/link-to}}
+	{{#link-to 'analyses'}}{{fa-icon "area-chart"}} Analyses{{/link-to}}
+	{{#link-to 'groups'}}{{fa-icon "users"}} Groepen{{/link-to}}
+	{{#link-to 'sports'}}{{fa-icon "futbol-o"}} Sporten{{/link-to}}
+</nav>
 <section id="content">
 	{{outlet}}
 </section>
+<button class="btn captureVideo" {{action 'captureVideo'}}>{{fa-icon 'video-camera'}} </button>

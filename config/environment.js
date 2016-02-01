@@ -50,9 +50,13 @@ module.exports = function(environment) {
 	}
 
 	ENV.contentSecurityPolicy = {
-		// Deny everything by default
-		'connect-src': "*",
-		'img-src': "'self' http://lorempixel.com",
+		'default-src': "'self' *",
+		'script-src': "'self'",
+		'font-src': "'self'",
+		'connect-src': "'self' http://dev.code.rehab/mytrainr_backend/api/v1/ *",
+		'img-src': "'self' *",
+		'style-src': "'self' *",
+		'media-src': "'self' *"
 	}
 
 	return ENV;

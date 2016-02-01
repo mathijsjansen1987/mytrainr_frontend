@@ -1,11 +1,11 @@
 <h1>Groepen</h1>
-{{#link-to 'groups.add'}}{{fa-icon 'plus'}} Groep toevoegen{{/link-to}}
+{{#link-to 'groups.add' class="btn"}}{{fa-icon 'plus'}} Groep toevoegen{{/link-to}}
 <ul>
   {{#each model as |group|}}
     <li class="group-item">
 		{{group.name}}
-		<button {{action 'removeGroup' group}}>x</button>
-		{{#link-to 'groups.edit' group}}wijzig{{/link-to}}
+		<button class="btn" {{action 'removeGroup' group}}>x</button>
+		{{#link-to 'groups.edit' group class="btn"}}wijzig{{/link-to}}
 	</li>
   {{/each}}
 </ul>
