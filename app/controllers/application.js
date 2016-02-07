@@ -3,8 +3,10 @@ import Ember from 'ember';
 export default Ember.Controller.extend({
 
 
+	status:'offline',
 	currentPathChange: function () {
 		Ember.$('#mobileNav').removeClass('show');
+		//this.send('checkConnection');
 	}.observes('currentPath'),
 
 	actions: {
@@ -24,8 +26,20 @@ export default Ember.Controller.extend({
 			states[Connection.CELL_4G]  = 'Cell 4G connection';
 			states[Connection.CELL]     = 'Cell generic connection';
 			states[Connection.NONE]     = 'No network connection';
-
-			alert('Connection type: ' + states[networkState]);
+/*
+			if(states[networkState] == "WiFi connection"){
+				this.status = 'WIFI';
+				Ember.$('#status').css('color','green');
+				
+			}
+				
+			else{
+				Ember.$('#status').css('color','red');
+				this.status = 'offline';
+			}*/
+				
+			
+			// alert('Connection type: ' + states[networkState]);
 		},
 
 		captureVideo: function(){

@@ -1,6 +1,11 @@
 import Ember from 'ember';
-
+import DS from 'ember-data';
 export default Ember.Controller.extend({
+	
+	
+	model: function() {
+		 return this.store.findAll('sport');
+  	},
 
 	actions: {
 		addGroup: function(group){

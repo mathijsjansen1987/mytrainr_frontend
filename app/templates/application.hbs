@@ -26,7 +26,11 @@
 	{{#link-to 'groups'}}{{fa-icon "users"}} Groepen{{/link-to}}
 	{{#link-to 'sports'}}{{fa-icon "futbol-o"}} Sporten{{/link-to}}
 </nav>
+
 <section id="content">
+	<section id="status">
+	{{fa-icon 'circle'}} {{status}}
+</section>
 	{{outlet}}
 </section>
 <button class="btn captureVideo" {{action 'captureVideo'}}>{{fa-icon 'video-camera'}} </button>

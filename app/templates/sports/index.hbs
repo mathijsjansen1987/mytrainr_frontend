@@ -4,7 +4,7 @@
   {{#each model as |sport|}}
     <li class="sport-item">
 		{{sport.name}}
-		<button class="btn" {{action 'removeSport' sport}}>x</button>
+		<a {{action 'removeSport' sport}}>{{fa-icon 'trash'}}</a>
 	</li>
   {{/each}}
 </ul>

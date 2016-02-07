@@ -3,19 +3,13 @@
 {{log model}}
 
 <ul>
-  {{#each model as |analyse|}}
-    <li class="video-item">
-		{{#link-to 'videos.show' analyse}}
-		{{analyse.type}}
-		<section class="info">
-			<h3>{{analyse.name}}</h3>
-			<hr>
-			<p>{{analyse.description}}</p>
-			<hr>
-			<button>Bekijk</button>
-			<button {{action 'removeAnalyse' analyse}}>x</button>
-		</section>
-		{{/link-to}}
+	{{#each model as |analyse|}}
+	<li class="video-item">
+		
+		{{analyse.name}}
+		<!-- {{#link-to 'videos.show' analyse}}{{/link-to}} -->
+		<a {{action 'removeAnalyse' analyse}}>{{fa-icon 'trash'}}</a>
+		
 	</li>
-  {{/each}}
+	{{/each}}
 </ul>

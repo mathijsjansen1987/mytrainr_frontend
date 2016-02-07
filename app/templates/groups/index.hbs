@@ -3,9 +3,9 @@
 <ul>
   {{#each model as |group|}}
     <li class="group-item">
-		{{group.name}}
-		<button class="btn" {{action 'removeGroup' group}}>x</button>
-		{{#link-to 'groups.edit' group class="btn"}}wijzig{{/link-to}}
+		{{group.name}}	
+		<a {{action 'removeGroup' group}}>{{fa-icon 'trash'}}</a>
+		{{#link-to 'groups.edit' group }}{{fa-icon 'pencil'}}{{/link-to}}		
 	</li>
   {{/each}}
 </ul>

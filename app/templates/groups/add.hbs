@@ -8,8 +8,15 @@
 	{{textarea value=description placeholder="beschrijving" cols="80" rows="6" }}
 </p>
 
+
+
+{{log sports}}
 <p>
-	{{input type="text" value=sport placeholder="sport" size="50" }}
+	{{view "select"
+       content=sports
+       optionValuePath="content.id"
+       optionLabelPath="content.name"}}
+	
 </p>
 
 {{#link-to 'groups' class="btn"}}Annuleren{{/link-to}}
