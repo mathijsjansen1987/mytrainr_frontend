@@ -1,10 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.mytrainr.app" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-	<name>Mytrainr</name>
-	<access origin="https://codepush.azurewebsites.net/" />
-	<description>
-		A sample Apache Cordova application that responds to the deviceready event.
+	 <name>Mytrainr</name>
+		<icon src="../dist/assets/images/app-icon.png" />
+    <description>
+        Het video-platform voor de schaatssport
 	</description>
+	<access origin="https://codepush.azurewebsites.net/" />
 	<author email="mathijs@code.rehab" href="http://code.rehab">
 		Code rehab Team
 	</author>

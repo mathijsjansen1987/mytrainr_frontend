@@ -19,10 +19,11 @@
     <preference name="CodePushDeploymentKey" value="2viOWaGK5GF-iQjeG0StKgl45FgeVkadlJ-Ul" />
     <allow-intent href="market:*" />
     <name>Mytrainr</name>
-    <access origin="https://codepush.azurewebsites.net/" />
+    <icon src="../dist/assets/images/app-icon.png" />
     <description>
-		A sample Apache Cordova application that responds to the deviceready event.
+        Het video-platform voor de schaatssport
 	</description>
+    <access origin="https://codepush.azurewebsites.net/" />
     <author email="mathijs@code.rehab" href="http://code.rehab">
 		Code rehab Team
 	</author>

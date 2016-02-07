@@ -2,6 +2,11 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
 
+
+	currentPathChange: function () {
+		Ember.$('#mobileNav').removeClass('show');
+	}.observes('currentPath'),
+
 	actions: {
 		toggleNav: function(){
 			Ember.$('#mobileNav').toggleClass('show');

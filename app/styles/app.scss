@@ -54,6 +54,7 @@ nav#mobileNav{
 	background-color: #999;
 	-webkit-transition: all 0.3s; /* Safari */
 	transition: all 0.3s;
+	z-index:9999;
 
 	&.show{
 		left:0;
@@ -175,6 +176,9 @@ body.videos.show{
 // mobile
 @include breakpoint($mobile) {
 	header#main{
+		position: fixed;
+		top:0;
+		z-index:9;
 		display: table;
 		nav,span#profileInfo{
 			display: none;
@@ -184,8 +188,17 @@ body.videos.show{
 			float:right;
 		}
 		
-		.toggleNaV{ display: block; }
+		.toggleNaV{ display: block; z-index:9; }
 
+	}
+	
+	section#content{
+		margin-top: 85px;
+		
+		.video-item img{
+			width:100%;
+			height: auto;
+		}
 	}
 	
 	#profileInfo{

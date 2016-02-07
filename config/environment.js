@@ -50,7 +50,7 @@ module.exports = function(environment) {
 	}
 
 	ENV.contentSecurityPolicy = {
-		'default-src': "'self' *",
+		'default-src': "'self' * http://dev.code.rehab/mytrainr_backend",
 		'script-src': "'self'",
 		'font-src': "'self'",
 		'connect-src': "'self' http://dev.code.rehab/mytrainr_backend/api/v1/ *",
