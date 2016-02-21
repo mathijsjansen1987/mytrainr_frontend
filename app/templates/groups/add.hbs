@@ -8,14 +8,13 @@
 	{{textarea value=description placeholder="beschrijving" cols="80" rows="6" }}
 </p>
 
-
-
-{{log sports}}
 <p>
 	{{view "select"
        content=sports
        optionValuePath="content.id"
-       optionLabelPath="content.name"}}
+       optionLabelPath="content.name"
+	   selectionBinding=selectedSport
+	  }}
 	
 </p>
 

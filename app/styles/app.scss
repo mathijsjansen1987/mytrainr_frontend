@@ -3,6 +3,30 @@
 
 $mobile: max-width 600px;
 
+
+section#videoAddPopup{
+	display: none;
+	position: absolute;
+	left:0;
+	top:0;
+	bottom:0;
+	right:0;
+	z-index:9999;
+	background-color: rgba(0,0,0,0.4);
+
+	.content{
+		position: absolute;
+		left: 15%;
+		top: 25%;
+		right: 15%;
+		background-color: #666;
+		color:#fff;
+		padding: 20px;
+		text-align: center;
+	}
+
+}
+
 a{ outline: none; }
 section#content{
 	ul{

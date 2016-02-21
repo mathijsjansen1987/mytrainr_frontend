@@ -1,18 +1,14 @@
 import Ember from 'ember';
 import DS from 'ember-data';
 export default Ember.Controller.extend({
-	
-	
-	model: function() {
-		 return this.store.findAll('sport');
-  	},
+
 
 	actions: {
 		addGroup: function(group){
 
 			var name = this.get('title');
 			var description = this.get('description');
-			var sport = this.get('sport');
+			var sport = this.get('selectedSport.id');
 
 			var group = this.store.createRecord('group', {
 				name: name,

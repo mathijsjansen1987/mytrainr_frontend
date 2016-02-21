@@ -245,6 +245,22 @@ module.exports = [
         "clobbers": [
             "Connection"
         ]
+    },
+    {
+        "file": "plugins/com.photokandy.videothumbnail/www/PKVideoThumbnail.js",
+        "id": "com.photokandy.videothumbnail.PKVideoThumbnail",
+        "pluginId": "com.photokandy.videothumbnail",
+        "clobbers": [
+            "window.PKVideoThumbnail"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-video-thumbnail/www/VideoThumbnail.js",
+        "id": "cordova-plugin-video-thumbnail.video-thumbnail",
+        "pluginId": "cordova-plugin-video-thumbnail",
+        "clobbers": [
+            "navigator.createThumbnail"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -253,7 +269,9 @@ module.exports.metadata =
     "cordova-plugin-whitelist": "1.2.0",
     "cordova-plugin-file": "3.0.0",
     "cordova-plugin-media-capture": "1.1.0",
-    "cordova-plugin-network-information": "1.1.0"
+    "cordova-plugin-network-information": "1.1.0",
+    "com.photokandy.videothumbnail": "1.0.1",
+    "cordova-plugin-video-thumbnail": "2.0.1"
 }
 // BOTTOM OF METADATA
 });

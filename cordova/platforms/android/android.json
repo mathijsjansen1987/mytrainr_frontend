@@ -33,6 +33,14 @@
                         {
                             "xml": "<preference name=\"AndroidPersistentFileLocation\" value=\"Internal\" />",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"PKVideoThumbnail\"><param name=\"android-package\" value=\"com.photokandy.PKVideoThumbnail.PKVideoThumbnail\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"VideoThumbnail\"><param name=\"android-package\" value=\"com.lewie9021.videothumbnail.VideoThumbnail\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -42,7 +50,7 @@
                     "/*": [
                         {
                             "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
-                            "count": 2
+                            "count": 4
                         },
                         {
                             "xml": "<uses-permission android:name=\"android.permission.RECORD_AUDIO\" />",
@@ -72,6 +80,12 @@
             "PACKAGE_NAME": "com.mytrainr.app"
         },
         "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.mytrainr.app"
+        },
+        "com.photokandy.videothumbnail": {
+            "PACKAGE_NAME": "com.mytrainr.app"
+        },
+        "cordova-plugin-video-thumbnail": {
             "PACKAGE_NAME": "com.mytrainr.app"
         }
     },
@@ -322,12 +336,30 @@
             "clobbers": [
                 "Connection"
             ]
+        },
+        {
+            "file": "plugins/com.photokandy.videothumbnail/www/PKVideoThumbnail.js",
+            "id": "com.photokandy.videothumbnail.PKVideoThumbnail",
+            "pluginId": "com.photokandy.videothumbnail",
+            "clobbers": [
+                "window.PKVideoThumbnail"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-video-thumbnail/www/VideoThumbnail.js",
+            "id": "cordova-plugin-video-thumbnail.video-thumbnail",
+            "pluginId": "cordova-plugin-video-thumbnail",
+            "clobbers": [
+                "navigator.createThumbnail"
+            ]
         }
     ],
     "plugin_metadata": {
         "cordova-plugin-whitelist": "1.2.0",
         "cordova-plugin-file": "3.0.0",
         "cordova-plugin-media-capture": "1.1.0",
-        "cordova-plugin-network-information": "1.1.0"
+        "cordova-plugin-network-information": "1.1.0",
+        "com.photokandy.videothumbnail": "1.0.1",
+        "cordova-plugin-video-thumbnail": "2.0.1"
     }
 }
