@@ -8,6 +8,8 @@ var Router = Ember.Router.extend({
 Router.map(function() {
 	this.resource('dashboard',{path: '/'});
 
+    this.route('login');
+
 	this.resource('videos',function(){
 		this.route('index', { path: '/' });
 		this.route('show', { path: '/:video_id' });

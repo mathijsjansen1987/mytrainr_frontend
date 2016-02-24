@@ -1,3 +1,7 @@
+{{#if session.isAuthenticated}}
 <h1>Dashboard</h1>
 
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu egestas massa. Phasellus sit amet diam egestas, imperdiet odio vitae, sollicitudin lacus. Aliquam mollis risus non nibh hendrerit dapibus. Pellentesque condimentum enim neque, sed pulvinar arcu commodo sit amet. Nulla aliquet rhoncus pellentesque. Sed luctus mollis nibh, non facilisis nisi sodales et. Fusce porta lacus vel nulla mattis congue.</p>
+{{else}}
+{{#link-to 'login'}}Login{{/link-to}}
+{{/if}}

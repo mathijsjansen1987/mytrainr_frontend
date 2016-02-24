@@ -1,5 +1,4 @@
 @import "bower_components/font-awesome/scss/font-awesome";
-@import "bower_components/compass-breakpoint/stylesheets/breakpoint";
 
 $mobile: max-width 600px;
 
@@ -246,7 +245,10 @@ body.videos.show{
 }
 
 // mobile
-@include breakpoint($mobile) {
+
+@media only screen and (max-device-width: 620px) {
+
+
 	header#main{
 		position: fixed;
 		top:0;
@@ -281,4 +283,5 @@ body.videos.show{
 	#profileInfo{
 		display: none;
 	}
-}
+
+  	}
